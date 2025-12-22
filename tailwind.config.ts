@@ -9,7 +9,8 @@ module.exports = {
         "primary-red": "hsl(14, 86%, 42%)",
         green: "hsl(159, 69%, 38%)",
         primary: {
-          "marine-blue": " hsl(243, 100%, 62%)",
+          "marine-blue": " hsl(217, 84%, 17%)",
+          // "marine-blue": " hsl(243, 100%, 62%)",
           "purplish-blue": "hsl(243, 100%, 62%)",
           "pastel-blue": "hsl(228, 100%, 84%)",
           "light-blue": "hsl(206, 94%, 87%)",

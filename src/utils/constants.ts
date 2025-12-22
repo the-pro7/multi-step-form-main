@@ -1,3 +1,7 @@
+import Arcade from "../assets/images/icon-arcade.svg"
+import Advanced from "../assets/images/icon-advanced.svg"
+import Pro from "../assets/images/icon-pro.svg"
+
 export const multiStepData = [
   {
     stepId: 1,
@@ -105,3 +109,28 @@ export const steps = [
     stepName: "Finishing up",
   },
 ];
+
+
+export const stepTwoCards = [
+  {
+    title: "Arcade",
+    yearBill: "$90/yr",
+    monthBill: "$9/mo",
+    free: "2 months free",
+    imgUrl: Arcade,
+  },
+  {
+    title: "Advanced",
+    yearBill: "$120/yr",
+    monthBill: "$12/mo",
+    free: "2 months free",
+    imgUrl: Advanced,
+  },
+  {
+    title: "Pro",
+    yearBill: "$150/yr",
+    monthBill: "$15/mo",
+    free: "2 months free",
+    imgUrl: Pro,
+  },
+]

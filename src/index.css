@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 /* @import "tw-animate-css"; */
-
 @custom-variant dark (&:is(.dark *));
 @config "../tailwind.config.ts";
 
@@ -143,5 +142,24 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+
+@layer utilities {
+  .label {
+    @apply text-primary-marine-blue;
+  }
+
+  .control-btn {
+    @apply py-[1.456em] px-5! rounded-sm font-medium bg-primary-marine-blue cursor-pointer;
+  }
+
+  .step-heading {
+    @apply text-primary-marine-blue font-bold text-3xl font-sans;
+  }
+
+  .step-sub-heading {
+    @apply text-neutral-cool-gray leading-6 text-lg;
   }
 }
