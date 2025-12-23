@@ -4,7 +4,7 @@ import { Label } from "../ui/label";
 export default function StepOneView() {
   return (
     <>
-      <div className="flex flex-col gap-2">
+      <div className="header">
         <h1 className="step-heading">Personal info</h1>
         <p className="step-sub-heading">
           Please provide your name, email address and phone number

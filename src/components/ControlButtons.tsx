@@ -3,17 +3,18 @@ import { Button } from "./ui/button";
 
 export default function ControlButtons({
   currentView,
-  setCurrentView
+  setCurrentView,
+  setConfirmed,
 }: {
   currentView: number;
-  setCurrentView: Dispatch<SetStateAction<number>>
+  setConfirmed: Dispatch<SetStateAction<boolean>>;
+  setCurrentView: Dispatch<SetStateAction<number>>;
 }) {
-
   function handleNextStepClick() {
-    setCurrentView(currentView + 1)
+    setCurrentView(currentView + 1);
   }
   function handlePrevStepClick() {
-    setCurrentView(currentView - 1)
+    setCurrentView(currentView - 1);
   }
 
   return (
@@ -35,10 +36,12 @@ export default function ControlButtons({
       <Button
         size="lg"
         type={currentView === 1 ? "submit" : "button"}
-        className={`control-btn ${currentView === 1 && "ml-auto"}`}
-        onClick={handleNextStepClick}
+        className={`control-btn hover:bg-primary-pastel-blue transition-colors hover:shadow-none ${currentView === 1 && "ml-auto"}`}
+        onClick={() =>
+          currentView === 5 ? setConfirmed(true) : handleNextStepClick()
+        }
       >
-        {currentView === 4 ? "Go Back" : "Next Step"}
+        {currentView === 4 ? "Confirm" : "Next Step"}
       </Button>
     </div>
   );

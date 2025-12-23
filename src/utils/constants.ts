@@ -1,6 +1,6 @@
-import Arcade from "../assets/images/icon-arcade.svg"
-import Advanced from "../assets/images/icon-advanced.svg"
-import Pro from "../assets/images/icon-pro.svg"
+import Arcade from "../assets/images/icon-arcade.svg";
+import Advanced from "../assets/images/icon-advanced.svg";
+import Pro from "../assets/images/icon-pro.svg";
 
 export const multiStepData = [
   {
@@ -107,11 +107,10 @@ export const steps = [
   {
     id: 4,
     stepName: "Finishing up",
-  },
+  }
 ];
 
-
-export const stepTwoCards = [
+const stepTwoCards = [
   {
     title: "Arcade",
     yearBill: "$90/yr",
@@ -133,4 +132,42 @@ export const stepTwoCards = [
     free: "2 months free",
     imgUrl: Pro,
   },
-]
+];
+
+const stepThreeCards = [
+  {
+    title: "Online service",
+    description: "Access to multiplayer games",
+    bill: "+1/mo",
+    defaultSelected: true,
+  },
+  {
+    title: "Larger storage",
+    description: " Extra 1TB of cloud save",
+    bill: "+2/mo",
+    defaultSelected: true,
+  },
+  {
+    title: "Customizable Profile",
+    description: "Custom theme on your profile",
+    bill: "+2/mo",
+    defaultSelected: false,
+  },
+];
+
+const stepFourData = {
+  monthly: {
+    bill: 9,
+    online: 1,
+    storage: 2,
+    total: 12
+  },
+  yearly: {
+    bill: 90,
+    online: 10,
+    storage: 20,
+    total: 120
+  },
+};
+
+export { stepTwoCards, stepThreeCards, stepFourData };

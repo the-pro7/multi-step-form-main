@@ -1,3 +1,7 @@
+import ThankYouIcon from "../../assets/images/icon-thank-you.svg"
+
 export default function ConfirmView() {
-    return <h1>Confirm</h1>
+    return <div>
+      <img src={ThankYouIcon} alt="Check mark on red background"/>
+    </div>
 }

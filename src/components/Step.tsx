@@ -15,7 +15,8 @@ export default function Step({ id, stepName, currentStep, changeStep }: Props) {
       <div
         className={`w-9 h-9 aspect-square rounded-full outline outline-white flex items-center justify-center text-white font-semibold hover:bg-primary-pastel-blue hover:text-black transition-colors hover:outline-none ${
           currentStep === id &&
-          "bg-primary-light-blue outline-primary-light-blue! text-primary-marine-blue! text-xl"
+          `active-step-indicator  ${currentStep >= 4 && "last-of-type:active-step-indicator"}`
+          
         }`}
       >
         {id}

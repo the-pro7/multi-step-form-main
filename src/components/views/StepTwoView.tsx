@@ -6,13 +6,13 @@ export default function StepTwoView() {
   const [billByMonth, setBillByMonth] = useState(true);
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="header">
         <h1 className="step-heading">Select your plan</h1>
         <p className="step-sub-heading">
           You have the option of monthly or yearly biling.
         </p>
       </div>
-      <div className="my-3">
+      <div className="my-3 flex flex-col gap-2">
         {stepTwoCards.map((card) => (
           <BillingOption
             key={card.title}
